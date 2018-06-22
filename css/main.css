@@ -14,6 +14,7 @@ html {
     color: var(--text-gray);
     font-size: 1em;
     line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ::selection {
@@ -47,7 +48,8 @@ img {
 }
 
 .wrapper {
-    background: white;
+    background: white url('../assets/background.jpg') repeat-x;
+    background-position: bottom;
     width: 830px;
     left: 0;
     right: 0;
@@ -55,7 +57,7 @@ img {
     bottom: 10rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 2rem 3rem;
+    padding: 2rem 2.5rem;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -85,7 +87,7 @@ img {
 }
 
 .header__info {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 5px 0 0;
     color: black;
     word-break: break-word;
@@ -96,8 +98,9 @@ img {
     background: url('./../assets/header.jpg') no-repeat;
     width: 828px;
     height: 261px;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     position: relative;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .slogan__wrapper {
@@ -120,7 +123,8 @@ img {
 
 .main-nav {
     color: var(--dark-blue);
-    border-bottom: 2px solid var(--dark-blue);
+    width: 100%;
+    border-bottom: 2px solid #abb2b8;
 }
 
 .main-nav__list {
@@ -133,7 +137,7 @@ img {
     display: inline-block;
     text-transform: uppercase;
     font-weight: bold;
-    margin-right: 1.75rem;
+    margin-right: 1.9125rem;
     font-size: 0.9rem;
     cursor: pointer;
 }
@@ -148,22 +152,33 @@ img {
 
 .content {
     display: flex;
-    margin-top: 1rem;
+    
 }
 
 .content__box {
     width: 50%;
+    margin-top: 2.5rem;
 }
 
 .wrapper__subtitle {
     text-transform: uppercase;
     font-size: 1.25rem;
+    margin-top: 0;
+    color: var(--dark-blue);
+
 }
 
 .content__box--highlighted {
     border-bottom: 1px solid gray;
     border-left: 1px solid gray;
-    padding: 0 0 1rem 2rem;
+    padding: 0 0 2rem 3rem;
+}
+
+.content__description {
+    font-size: 0.9rem;
+    padding-right: 1rem;
+    hyphens: manual;
+    word-break: break-word;
 }
 
 .partners {
@@ -173,8 +188,9 @@ img {
 .partners__list {
     list-style-type: none;
     columns: 5;
-    padding: 0 0 1rem;
-    border-bottom: 2px solid var(--dark-blue);
+    padding: 0 0 2rem;
+    font-size: 0.9rem;
+    border-bottom: 2px solid #a1b1c1;
 }
 
 .partners__list li:hover {
@@ -186,8 +202,9 @@ img {
     display: flex;
     align-items: center;
     list-style-type: none;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     padding: 0;
+    color: #737b84;
 }
 
 .bottom-nav__element:hover {
@@ -203,4 +220,9 @@ img {
     cursor: pointer;
 }
 
-
+.copyright-text {
+    color: black;
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
